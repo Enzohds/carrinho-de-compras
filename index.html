@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras 🛒</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Loja Simples</h1>
+            <div class="cart-icon" onclick="showCart()">
+                <img src="./carrinho.png" alt="carrinho de compras">
+                <span id="cart-count" class="cart-count">0</span>
+            </div>
+        </header>
+
+        <nav>
+            <button onclick="showProducts()">Produtos</button>
+            <button onclick="showCart()">Carrinho</button>
+        </nav>
+
+        <div id="products-tab" class="tab">
+            <h2>Produtos Disponíveis</h2>
+            <div id="products-list" class="products-list">
+
+            </div>
+        </div>
+
+        <div id="cart-tab" class="tab" style="display: none;">
+            <h2>Carrinho de Compras</h2>
+            <div id="cart-items" class="cart-items">
+                <p>O Carrinho está vazio.</p>
+            </div>
+
+            <h3 id="total-price">Total: R$0,00</h3> 
+        </div>
+    </div>
+    
+</body>
+<script src="./script.js"></script>
+</html>
